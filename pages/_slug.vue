@@ -1,8 +1,9 @@
 <template>
-  <div>
+  <div class="flex bg-gray-900 text-white flex-col items-center">
+    <nuxt-link to="/">Acceuil</nuxt-link>
     <h2>{{ game.title }}</h2>
     <nuxt-content :document="game" />
-    <pre>{{ game }}</pre>
+    <img :src="game.image" :alt="game.title" class="h-20 w-auto" />
   </div>
 </template>
 
